@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penggunaan AI</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #faf86f;
+        }
+        .dropdown {
+            display: inline-block;
+            position: relative;
+            margin: 20px;
+        }
+        .dropbtn {
+            background-color: #6ec6ff;
+            color: white;
+            padding: 14px 20px;
+            font-size: 16px;
+            border: 2px solid #4fa3d1;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            border: 2px solid #4fa3d1;
+            z-index: 10;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #a0e1ff;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .custom-button {
+    background-color: #6ec6ff; /* Warna biru muda */
+    color: white; /* Warna teks putih */
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid #4fa3d1; /* Outline biru */
+    border-radius: 15px; /* Sudut membulat */
+    padding: 10px 25px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #4fa3d1; /* Warna biru lebih gelap saat hover */
+}
+
+        .paragraf.box {
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang semi-transparan */
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1); /* Skala awal */
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out; /* Animasi */
+    
+}
+
+
+.paragraf.box:hover {
+    transform: scale(1.05); /* Perbesar sedikit saat hover */
+    background-color: rgba(255, 255, 255, 1); /* Hilangkan transparansi */
+}
+
+.paragraf.box h2 {
+    margin-bottom: 10px;
+    color: rgb(19, 35, 63);
+    font-family: 'Verdana', sans-serif;
+    text-align: center;
+}
+
+.paragraf.box p {
+    color: rgb(50, 50, 50);
+    font-family: 'Verdana', sans-serif;
+    text-align: justify;
+    line-height: 1.6;
+} 
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.daftar-pustaka {
+    background: #fff8dc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.daftar-pustaka h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.daftar-pustaka ol {
+    line-height: 1.8;
+    padding-left: 20px;
+}
+
+.daftar-pustaka ol li {
+    margin-bottom: 12px;
+}
+
+.daftar-pustaka ol li a {
+    color: blue;
+    text-decoration: none;
+}
+
+.daftar-pustaka ol li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="header.png" alt="">
+    </div>
+
+
+<div class="menu-container"> 
+    <div class="navigation">
+        <a href="index.html" class="custom-button">Home</a>
+    </div>    
+
+    <div class="dropdown">
+        <button class="dropbtn">Pendahuluan</button>
+        <div class="dropdown-content">
+            <a href="pendahuluan.html">Latar Belakang</a>
+            <a href="rumusan.html">Rumusan Masalah</a>
+            <a href="tujuan.html">Tujuan Penelitian</a>
+            <a href="manfaat penelitian.html">Manfaat Penelitian</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Profile</button>
+        <div class="dropdown-content">
+            <a href="profil.html">Celine</a>
+            <a href="profil.html">Griselle</a>
+            <a href="profil.html">Kimora</a>
+            <a href="profil.html">Louisa</a>
+            <a href="profil.html">Ursula</a>
+            <a href="profil.html">Valika</a>
+        </div>
+    </div>
+    
+    <div class="dropdown">
+        <button class="dropbtn">Isi</button>
+        <div class="dropdown-content">
+            <a href="perkembangan.html">Penjelasan & Perkembangan AI</a>
+            <a href="dampak positif.html">Dampak Positif AI</a>
+            <a href="dampak negatif.html">Dampak Negatif AI</a>
+            <a href="contoh.html">Contoh AI</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Studi Kasus</button>
+        <div class="dropdown-content">
+            <a href="studi kasus pos.html">Studi Kasus Positif</a>
+            <a href="studi kasus neg.html">Studi kasus Negatif</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Penutup</button>
+        <div class="dropdown-content">
+            <a href="kesimpulan.html">Kesimpulan</a>
+            <a href="saran.html">Saran</a>
+            <a href="penutup.html">Kata Penutup</a>
+            <a href="pustaka.html">Daftar Pustaka</a>
+        </div>
+    </div>
+</div>      
+
+<div class="paragraf box">
+    <div class="Daftar Pustaka">
+    <h2>Daftar Pustaka</h2>
+    <ol>
+        <li>Binus Graduate Program. (2022, 2 Mei). Sejarah singkat tentang kecerdasan buatan (Artificial Intelligence). Diakses pada 25 Februari 2025, dari https://graduate.binus.ac.id/2022/05/02/sejarah-singkat-tentang-kecerdasan-buatan-artificial-intelligence/.</li>
+        <li>Universitas Airlangga (UNAIR). (n.d.). Apakah AI bisa gantikan kecerdasan manusia? Begini analisis dosen UNAIR. Diakses pada 25 Februari 2025, dari https://unair.ac.id/apakah-ai-bisa-gantikan-kecerdasan-manusia-begini-analisis-dosen-unair/.</li>        
+        <li>Kementerian Keuangan RI (KLC2). (n.d.). 5 manfaat menggunakan Artificial Intelligence. Diakses pada 25 Februari 2025, dari https://klc2.kemenkeu.go.id/kms/knowledge/5-manfaat-menggunakan-artificial-intelligence-5810c403/detail/.</li>
+        <li>Verihubs. (n.d.). Manfaat dan fungsi AI. Diakses pada 25 Februari 2025, dari https://verihubs.com/blog/manfaat-fungsi-ai.</li>
+        <li>Kompas Tekno. (2023, 25 November). 10 manfaat Artificial Intelligence dalam kehidupan sehari-hari yang perlu diketahui. Diakses pada 25 Februari 2025, dari https://tekno.kompas.com/read/2023/11/25/16150017/10-manfaat-artificial-intelligence-dalam-kehidupan-sehari-hari-yang-perlu.</li>
+        <li>Widya AI. (n.d.). 10 dampak positif dan negatif Artificial Intelligence (AI). Diakses pada 25 Februari 2025, dari https://widya.ai/10-dampak-positif-dan-negatif-artificial-intelligence-ai/.
+
+        </li>
+        <li>XL SATU. (n.d.). Dampak AI terhadap kehidupan manusia. Diakses pada 25 Februari 2025, dari https://satu.xl.co.id/berita-dan-artikel/dampak-ai/.</li>
+        <li>Universitas Medan Area (UMA). (n.d.). Dampak negatif dari teknologi Artificial Intelligence (AI). Diakses pada 25 Februari 2025, dari https://mh.uma.ac.id/dampak-negatif-dari-teknologi-artificial-intelligence-ai/.</li>
+        <li>Telkom University. (n.d.). Dampak buruk penggunaan AI yang perlu diwaspadai. Diakses pada 25 Februari 2025, dari https://humic.telkomuniversity.ac.id/id/dampak-buruk-penggunaan-ai-yang-perlu-diwaspadai/.</li>
+        <li>Primakara University. (n.d.). Contoh teknologi AI dalam berbagai bidang. Diakses pada 25 Februari 2025, dari https://primakara.ac.id/blog/info-teknologi/contoh-teknologi-AI.</li> 
+`   </div>
+</div>
+                             
+</body>
+</html>

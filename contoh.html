@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #faf86f;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+            margin: 20px;
+        }
+        .dropbtn {
+            background-color: #6ec6ff;
+            color: white;
+            padding: 14px 20px;
+            font-size: 16px;
+            border: 2px solid #4fa3d1;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            border: 2px solid #4fa3d1;
+            z-index: 10;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #a0e1ff;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+  
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 80%;
+            max-width: 900px;
+            gap: 50px;
+            margin: 50px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            margin: auto;
+        }
+
+        .card {
+            justify-content: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            transition: transform 0.3s;
+            width: 80%; 
+             max-width: 2000px; 
+             margin: 20px auto; 
+             margin: auto;
+            display: block;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            color: rgb(19, 35, 63);
+        }
+
+        .card p {
+            color: #3a3838;
+            font-size: 14px;
+            text-align: justify;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.custom-button {
+    background-color: #6ec6ff; /* Warna biru muda */
+    color: white; /* Warna teks putih */
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid #4fa3d1; /* Outline biru */
+    border-radius: 15px; /* Sudut membulat */
+    padding: 10px 25px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #4fa3d1; /* Warna biru lebih gelap saat hover */
+}
+
+.card h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card h3 img {
+    width: 30px;  /* Ukuran ikon */
+    height: auto;
+}
+
+.card {
+    margin-bottom: 20px; /* Jarak antar kartu */
+    padding: 20px; /* Ruang dalam kartu */
+    border-radius: 15px; /* Biar lebih lembut */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan biar elegan */
+}
+
+.card p img{
+    justify-content: center;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="header.png" alt="">
+    </div>
+
+    <div class="menu-container"> 
+        <div class="navigation">
+            <a href="index.html" class="custom-button">Home</a>
+        </div>    
+    
+        <div class="dropdown">
+            <button class="dropbtn">Pendahuluan</button>
+            <div class="dropdown-content">
+                <a href="pendahuluan.html">Latar Belakang</a>
+                <a href="rumusan.html">Rumusan Masalah</a>
+                <a href="tujuan.html">Tujuan Penelitian</a>
+                <a href="manfaat penelitian.html">Manfaat Penelitian</a>
+            </div>
+        </div>
+    
+    
+        <div class="dropdown">
+            <button class="dropbtn">Profile</button>
+            <div class="dropdown-content">
+                <a href="profil.html">Celine</a>
+                <a href="profil.html">Griselle</a>
+                <a href="profil.html">Kimora</a>
+                <a href="profil.html">Louisa</a>
+                <a href="profil.html">Ursula</a>
+                <a href="profil.html">Valika</a>
+            </div>
+        </div> 
+        
+   
+        <div class="dropdown">
+            <button class="dropbtn">Isi</button>
+            <div class="dropdown-content">
+                <a href="perkembangan.html">Penjelasan & Perkembangan AI</a>
+                <a href="dampak positif.html">Dampak Positif AI</a>
+                <a href="dampak negatif.html">Dampak Negatif AI</a>
+                <a href="contoh.html">Contoh AI</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Studi Kasus</button>
+            <div class="dropdown-content">
+                <a href="studi kasus pos.html">Studi Kasus Positif</a>
+                <a href="studi kasus neg.html">Studi kasus Negatif</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Penutup</button>
+            <div class="dropdown-content">
+                <a href="kesimpulan.html">Kesimpulan</a>
+                <a href="saran.html">Saran</a>
+                <a href="penutup.html">Kata Penutup</a>
+                <a href="pustaka.html">Daftar Pustaka</a>
+            </div>
+        </div>
+    </div>      
+    
+    <div class="card">
+        <h3>🤖 Asisten Virtual</h3>
+        <p>Sudah tidak asing lagi dengan istilah asisten virtual karena ini adalah salah satu contoh AI yang sering kita temui dalam kehidupan sehari - hari. Teknologi ini mampu membantu meringankan pekerjaan, seperti mencari informasi, pengaturan jadwal dan email otomatis. Contoh Asisten Virtual yang biasanya kita temukan sehari - hari adalah Siri dari perusahaan Apple untuk perangkat Iphone, serta Google Assitant untuk Android</p>
+        <p class="img">
+            <img src="personal asisten.jpg" height="300px" width="400px" alt="Google Assitant">
+        </p>
+    
+    </div>
+    
+    <div class="card">
+        <h3>🛒 Marketplace</h3>
+        <p>Hal ini merupakan platform yang sudah kita pakai sehari - hari, ternyata marketplace juga memakai AI dan sangat krusial dalam peningkatan pengalaman belanja pelanggan. Di dalam marketplace AI bertugas untuk menganalisis pembelian dan penelusuran pelanggan agar dapat memberikan rekomendasi produk yang sesuai.</p>
+        <p class="img">
+            <img src="marketplace-indonesia-terbaik.jpg" height="400px" width="600px" alt="sampah">
+        </p>
+    </div>
+    
+    <div class="card">
+        <h3>🔠 Auto Correct</h3>
+        <p>Saat sedang chat dengan orang lain pasti kita sering mengalami fitur auto correct di keyboard. Dengan adanya fitur ini memudahkan pengguna untuk mengetik tanpa memperhatikan struktur bahasa, melainkan struktur bahasa dibetulkan dan dikoreksi oleh AI sehingga mengurangi resiko salah paham dalam penulisan chat.</p>
+        <p class="img">
+            <img src="autocorrect.png
+            " height="300px" width="400px" alt="Google Assitant">
+        </p>
+    </div>
+    
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cardContainer = document.getElementById("cardContainer");
+            function checkScroll() {
+                const rect = cardContainer.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 50) {
+                    cardContainer.classList.add("visible");
+                    window.removeEventListener("scroll", checkScroll);
+                }
+            }
+            window.addEventListener("scroll", checkScroll);
+            checkScroll();
+        });
+    </script>
+    
+    </div>
+              
+              
+
+</body>
+</html>

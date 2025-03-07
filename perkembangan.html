@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penggunaan AI</title>
+    <style>
+          body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #faf86f;
+        }
+        .dropdown {
+            display: inline-block;
+            position: relative;
+            margin: 20px;
+        }
+        .dropbtn {
+            background-color: #6ec6ff;
+            color: white;
+            padding: 14px 20px;
+            font-size: 16px;
+            border: 2px solid #4fa3d1;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            border: 2px solid #4fa3d1;
+            z-index: 10;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #a0e1ff;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+ 
+        .menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.custom-button {
+    background-color: #6ec6ff; /* Warna biru muda */
+    color: white; /* Warna teks putih */
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid #4fa3d1; /* Outline biru */
+    border-radius: 15px; /* Sudut membulat */
+    padding: 10px 25px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #4fa3d1; /* Warna biru lebih gelap saat hover */
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Jarak antar kolom */
+    padding: 20px;
+    
+}
+
+.column {
+    flex: 1;
+    min-width: 300px; /* Agar tetap responsif */
+    max-width: 600px;
+    text-align: justify;
+}
+
+.paragraph-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Warna semi-transparan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.paragraph-box:hover {
+    transform: scale(1.05); /* Perbesar saat hover */
+    background-color: rgba(255, 255, 255, 1); /* Kurangi transparansi saat hover */
+}
+
+.bottom-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch; /* Menyamakan tinggi card */
+}
+
+.card {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    min-width: 45%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="header.png" alt="">
+    </div>
+    <div class="menu-container"> 
+        <div class="navigation">
+            <a href="index.html" class="custom-button">Home</a>
+        </div>    
+    
+        <div class="dropdown">
+            <button class="dropbtn">Pendahuluan</button>
+            <div class="dropdown-content">
+                <a href="pendahuluan.html">Latar Belakang</a>
+                <a href="rumusan.html">Rumusan Masalah</a>
+                <a href="tujuan.html">Tujuan Penelitian</a>
+                <a href="manfaat penelitian.html">Manfaat Penelitian</a>
+            </div>
+        </div>
+    
+        <div class="dropdown">
+            <button class="dropbtn">Profile</button>
+            <div class="dropdown-content">
+                <a href="profil.html">Celine</a>
+                <a href="profil.html">Griselle</a>
+                <a href="profil.html">Kimora</a>
+                <a href="profil.html">Louisa</a>
+                <a href="profil.html">Ursula</a>
+                <a href="profil.html">Valika</a>
+            </div>
+        </div> <!-- Tambahkan ini untuk menutup dropdown Profile dengan benar -->
+        
+            
+        <div class="dropdown">
+            <button class="dropbtn">Isi</button>
+            <div class="dropdown-content">
+                <a href="perkembangan.html">Penjelasan & Perkembangan AI</a>
+                <a href="dampak positif.html">Dampak Positif AI</a>
+                <a href="dampak negatif.html">Dampak Negatif AI</a>
+                <a href="contoh.html">Contoh AI</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Studi Kasus</button>
+            <div class="dropdown-content">
+                <a href="studi kasus pos.html">Studi Kasus Positif </a>
+                <a href="studi kasus neg.html">Studi kasus Negatif </a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Penutup</button>
+            <div class="dropdown-content">
+                <a href="kesimpulan.html">Kesimpulan</a>
+                <a href="saran.html">Saran</a>
+                <a href="penutup.html">Kata Penutup</a>
+                <a href="pustaka.html">Daftar Pustaka</a>
+            </div>
+        </div>
+    </div>      
+    
+    <div class="content">
+        <div class="column right">
+            <div class="paragraph-box">
+                <h2>📌 Artificial Intelligence (AI)</h2>
+                <p>🔹 Apa Itu AI?</p>
+                    <p>Artificial Intelligence (AI) atau kecerdasan buatan adalah teknologi yang memungkinkan komputer atau mesin berpikir dan melakukan tugas yang biasanya hanya bisa dilakukan oleh manusia. AI belajar dari data dan pola yang dikumpulkan, semakin banyak data yang diberikan, semakin pintar AI dalam membuat keputusan atau prediksi. Contohnya, di media sosial seperti TikTok, AI digunakan untuk menghadirkan filter yang interaktif dan menarik.</p>
+                <p>🔹 Perkembangan AI dari Masa ke Masa</p>
+                    <p>AI pertama kali diperkenalkan dalam Konferensi Dartmouth pada tahun 1956, namun konsep kecerdasan buatan ini sebenarnya sudah dikembangkan jauh sebelumnya. Perjalanan AI dimulai dari tahap teori dan uji coba dasar pada tahun 1950-an hingga 1970-an, kemudian berkembang dengan adanya sistem pakar di tahun 1980-an. Pada tahun 2000-an, AI semakin canggih berkat teknologi pembelajaran mesin (machine learning). Hingga kini, AI telah mampu mengenali wajah, suara, dan bahasa manusia dengan tingkat akurasi yang tinggi, serta semakin erat dalam kehidupan sehari-hari, termasuk dalam dunia pendidikan. AI bisa membuat pembelajaran lebih seru dan interaktif, tetapi penggunaannya harus tetap bijak agar tidak berdampak negatif.</p>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="column left">
+                <div class="paragraph-box">
+                                <p>🔹 Tantangan dan Risiko AI</p>
+                                   <p> Beberapa ahli memperkirakan bahwa dalam 20-30 tahun ke depan, AI dapat mencapai kecerdasan setara atau bahkan lebih tinggi dari manusia. Konsekuensinya bisa sangat besar, karena AI dapat membantu menyelesaikan berbagai masalah global, tetapi juga berisiko jika tidak ada regulasi yang jelas. Oleh karena itu, penting untuk memastikan AI dikembangkan dengan nilai-nilai kemanusiaan, tidak merugikan pihak tertentu, dan tetap menghargai privasi.</p>
+                                <p>🔹 Masa Depan AI dan Cara Beradaptasi</p>
+                                  <p>Pemerintah serta organisasi internasional perlu menetapkan aturan dan pengawasan ketat agar AI digunakan untuk kepentingan bersama dan tidak disalahgunakan. Agar kita bisa beradaptasi dengan AI, kita harus memahami cara kerjanya, tidak langsung percaya begitu saja pada hasil AI, serta tetap melakukan analisis terhadap informasi yang diberikan. Di masa depan, AI diprediksi akan semakin maju dan berperan penting di berbagai bidang seperti kesehatan, transportasi, hingga energi terbarukan. Namun, penggunaan AI harus tetap bijak agar manfaatnya dapat dirasakan oleh semua orang.
+                                    </p>    
+                                </div>
+                        </div>
+        </div>
+         
+
+</body>
+</html>

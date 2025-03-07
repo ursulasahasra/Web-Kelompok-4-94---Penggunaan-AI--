@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penggunaan AI</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #faf86f;
+        }
+        .dropdown {
+            display: inline-block;
+            position: relative;
+            margin: 20px;
+        }
+        .dropbtn {
+            background-color: #6ec6ff;
+            color: white;
+            padding: 14px 20px;
+            font-size: 16px;
+            border: 2px solid #4fa3d1;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            border: 2px solid #4fa3d1;
+            z-index: 10;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #a0e1ff;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .custom-button {
+    background-color: #6ec6ff; /* Warna biru muda */
+    color: white; /* Warna teks putih */
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid #4fa3d1; /* Outline biru */
+    border-radius: 15px; /* Sudut membulat */
+    padding: 10px 25px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #4fa3d1; /* Warna biru lebih gelap saat hover */
+}
+
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.profile-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 20px auto;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+        .profile-box:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 1);
+        }
+        .profile-box img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .profile-box h2 {
+            margin: 10px 0 5px;
+            color: rgb(19, 35, 63);
+        }
+        .profile-box p {
+            color: rgb(50, 50, 50);
+        }
+
+    </style>
+</head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const profileLinks = document.querySelectorAll(".dropdown-content a");
+
+        profileLinks.forEach(link => {
+            link.addEventListener("click", function (event) {
+                const targetId = this.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    event.preventDefault();
+                    targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+            });
+        });
+    });
+</script>
+
+
+
+<body>
+
+    <div class="header">
+        <img src="header.png" alt="">
+    </div>
+
+<div class="menu-container"> 
+    <div class="navigation">
+        <a href="index.html" class="custom-button">Home</a>
+    </div>    
+
+    <div class="dropdown">
+        <button class="dropbtn">Pendahuluan</button>
+        <div class="dropdown-content">
+            <a href="pendahuluan.html">Latar Belakang</a>
+            <a href="rumusan.html">Rumusan Masalah</a>
+            <a href="tujuan.html">Tujuan Penelitian</a>
+            <a href="manfaat penelitian.html">Manfaat Penelitian</a>
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="dropdown">
+            <button class="dropbtn">Profile</button>
+            <div class="dropdown-content">
+                <a href="#celine">Celine</a>
+                <a href="#griselle">Griselle</a>
+                <a href="#kimora">Kimora</a>
+                <a href="#louisa">Louisa</a>
+                <a href="#ursula">Ursula</a>
+                <a href="#valika">Valika</a>
+            </div>
+        </div>
+    </div>
+
+
+    
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Profil dan Jobdesk</title>
+                <style>
+                    body {
+                        font-family: 'Comic Sans MS', cursive, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                        background-color: #faf86f;
+                    }
+                    .dropdown {
+                        display: inline-block;
+                        position: relative;
+                        margin: 20px;
+                    }
+                    .dropbtn {
+                        background-color: #6ec6ff;
+                        color: white;
+                        padding: 14px 20px;
+                        font-size: 16px;
+                        border: 2px solid #4fa3d1;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        font-weight: bold;
+                    }
+                    .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: #ffffff;
+                        min-width: 200px;
+                        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+                        border-radius: 10px;
+                        border: 2px solid #4fa3d1;
+                        z-index: 10;
+                    }
+                    .dropdown-content a {
+                        color: black;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                        text-align: left;
+                    }
+                    .dropdown-content a:hover {
+                        background-color: #a0e1ff;
+                    }
+                    .dropdown:hover .dropdown-content {
+                        display: block;
+                    }
+                    .custom-button {
+                        background-color: #6ec6ff;
+                        color: white;
+                        font-size: 18px;
+                        font-weight: bold;
+                        border: 3px solid #4fa3d1;
+                        border-radius: 15px;
+                        padding: 10px 25px;
+                        cursor: pointer;
+                        text-align: center;
+                        transition: 0.3s;
+                    }
+                    .custom-button:hover {
+                        background-color: #4fa3d1;
+                    }
+                    .menu-container {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 15px;
+                        margin: 20px 0;
+                    }
+                    .profile {
+                        background-color: rgba(255, 255, 255, 0.8);
+                        padding: 20px;
+                        margin: 20px auto;
+                        width: 60%;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                    }
+                    .profile img {
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                    .profile h2 {
+                        margin: 10px 0 5px;
+                        color: rgb(19, 35, 63);
+                    }
+                    .profile p {
+                        color: rgb(50, 50, 50);
+                    }
+
+                    .profile-box {
+    background-color: #fdfde2; /* Warna latar mirip dengan yang di gambar */
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.profile-box:hover {
+    transform: scale(1.05);
+    background-color: #fff;
+}
+
+.profile-box img {
+    width: 120px; /* Sesuaikan ukuran foto */
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.profile-details {
+    text-align: left;
+    flex: 1;
+}
+
+.profile-details h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #f4a800; /* Warna teks sesuai desain */
+    font-weight: bold;
+}
+
+.profile-details p {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.class-badge {
+    background-color: #f4c542;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: inline-block;
+} 
+
+:target {
+    scroll-margin-top: 80px; /* Sesuaikan dengan tinggi navbar */
+}
+
+
+
+ </style>
+            
+            <div class="dropdown">
+                <button class="dropbtn">Isi</button>
+                <div class="dropdown-content">
+                    <a href="perkembangan.html">Penjelasan & Perkembangan AI</a>
+                    <a href="dampak positif.html">Dampak Positif AI</a>
+                    <a href="dampak negatif.html">Dampak Negatif AI</a>
+                    <a href="contoh.html">Contoh AI</a>
+                </div>
+            </div>
+            
+    <div class="dropdown">
+        <button class="dropbtn">Studi Kasus</button>
+        <div class="dropdown-content">
+            <a href="studi kasus pos.html">Studi Kasus Positif</a>
+            <a href="studi kasus neg.html">Studi kasus Negatif </a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Penutup</button>
+        <div class="dropdown-content">
+            <a href="kesimpulan.html">Kesimpulan</a>
+            <a href="saran.html">Saran</a>
+            <a href="penutup.html">Kata Penutup</a>
+            <a href="pustaka.html">Daftar Pustaka</a>
+        </div>
+    </div>
+</div>      
+
+
+<div class="profile-box">
+    <img src="Celine.jpg" alt="Celine">
+    <div class="profile-details">
+        <h2>Alicia Joceline</h2>
+        <p>Jobdesk: Rumusan masalah, tujuan penelitian, manfaat penelitian, Coding tab pendahuluan
+        </p>
+        <span class="class-badge">IX-4/1</span>
+    </div>
+</div>
+
+<div class="profile-box">
+    <img src="Griselle.jpg" alt="Griselle">
+    <div class="profile-details">
+        <h2>Griselle Catalya</h2>
+        <p>Jobdesk:  Studi Kasus 1, Coding tab profil 
+        </p>
+        <span class="class-badge">IX-4/17</span>
+    </div>
+</div> 
+
+<div class="profile-box">
+    <img src="kimora.jpg" alt="Kimora">
+    <div class="profile-details">
+        <h2>Kimora Dominic</h2>
+        <p>Jobdesk: Dampak positif AI, dampak negatif AI, contoh AI, Coding tab isi
+        </p>
+        <span class="class-badge">IX-4/21</span>
+    </div>
+</div> 
+
+<div class="profile-box">
+    <img src="Louisa.jpg" alt="Louisa">
+    <div class="profile-details">
+        <h2>Louisa Anastasia</h2>
+        <p>Jobdesk: Studi Kasus 2, Coding tab studi kasus
+        </p>
+        <span class="class-badge">IX-4/23</span>
+    </div>
+</div> 
+
+<div class="profile-box">
+    <img src="Ursula.jpg" alt="Ursula">
+    <div class="profile-details">
+        <h2>Ursula Sahasra</h2>
+        <p>Jobdesk: Penjelasan dan perkembangan AI, Coding background, header, navbar, dan dropdown (home)
+        </p>
+        <span class="class-badge">IX-4/32</span>
+    </div>
+</div> 
+
+<div class="profile-box">
+    <img src="Valika.jpg" alt="Valika">
+    <div class="profile-details">
+        <h2>Valika Arum</h2>
+        <p>Jobdesk: Design, Latar belakang, kesimpulan, saran, kata penutup, Coding tab penutup
+        </p>
+        <span class="class-badge">IX-4/35</span>
+    </div>
+</div> 
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const profileLinks = document.querySelectorAll(".dropdown-content a");
+        profileLinks.forEach(link => {
+            link.addEventListener("click", function (event) {
+                const targetId = this.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    event.preventDefault();
+                    targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>

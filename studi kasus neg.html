@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #faf86f;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+            margin: 20px;
+        }
+        .dropbtn {
+            background-color: #6ec6ff;
+            color: white;
+            padding: 14px 20px;
+            font-size: 16px;
+            border: 2px solid #4fa3d1;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            border: 2px solid #4fa3d1;
+            z-index: 10;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #a0e1ff;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+  
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 80%;
+            max-width: 900px;
+            gap: 50px;
+            margin: 50px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            margin: auto;
+        }
+
+     
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            color: rgb(19, 35, 63);
+        }
+
+        .card p {
+            color: #3a3838;
+            font-size: 14px;
+            text-align: justify;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.custom-button {
+    background-color: #6ec6ff; /* Warna biru muda */
+    color: white; /* Warna teks putih */
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid #4fa3d1; /* Outline biru */
+    border-radius: 15px; /* Sudut membulat */
+    padding: 10px 25px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #4fa3d1; /* Warna biru lebih gelap saat hover */
+}
+
+
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.top-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+
+}
+
+
+.bottom-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch; /* Menyamakan tinggi card */
+}
+
+.card {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    min-width: 45%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="header.png" alt="">
+    </div>
+
+    <div class="menu-container"> 
+        <div class="navigation">
+            <a href="index.html" class="custom-button">Home</a>
+        </div>    
+    
+        <div class="dropdown">
+            <button class="dropbtn">Pendahuluan</button>
+            <div class="dropdown-content">
+                <a href="pendahuluan.html">Latar Belakang</a>
+                <a href="rumusan.html">Rumusan Masalah</a>
+                <a href="tujuan.html">Tujuan Penelitian</a>
+                <a href="manfaat penelitian.html">Manfaat Penelitian</a>
+            </div>
+        </div>
+    
+    
+
+        <div class="dropdown">
+            <button class="dropbtn">Profile</button>
+            <div class="dropdown-content">
+                <a href="profil.html">Celine</a>
+                <a href="profil.html">Griselle</a>
+                <a href="profil.html">Kimora</a>
+                <a href="profil.html">Louisa</a>
+                <a href="profil.html">Ursula</a>
+                <a href="profil.html">Valika</a>
+            </div>
+        </div>
+   
+        <div class="dropdown">
+            <button class="dropbtn">Isi</button>
+            <div class="dropdown-content">
+                <a href="perkembangan.html">Penjelasan & Perkembangan AI</a>
+                <a href="dampak positif.html">Dampak Positif AI</a>
+                <a href="dampak negatif.html">Dampak Negatif AI</a>
+                <a href="contoh.html">Contoh AI</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Studi Kasus</button>
+            <div class="dropdown-content">
+                <a href="studi kasus pos.html">Studi Kasus Positif </a>
+                <a href="studi kasus neg.html">Studi kasus Negatif </a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Penutup</button>
+            <div class="dropdown-content">
+                <a href="kesimpulan.html">Kesimpulan</a>
+                <a href="saran.html">Saran</a>
+                <a href="penutup.html">Kata Penutup</a>
+                <a href="pustaka.html">Daftar Pustaka</a>
+            </div>
+        </div>
+    </div>      
+    
+    <body>
+        <div class="container">
+            <div class="top-card">
+                <h2>📛 Deepfake dalam Politik dan Kejahatan Penggunaan AI</h2>
+                <p>Deepfake adalah teknologi berbasis AI yang dapat menghasilkan video, gambar, atau audio palsu dengan tingkat realisme yang sangat tinggi. Deepfake dengan kecerdasan buatan AI ini menggunakan teknologi berbasis GANs yang bertujuan untuk memanipulasi wajah dan suara seseorang agar seolah-olah menggambarkan sesuatu yang sebenarnya tidak terjadi pada kenyataannya.</p>
+            </div>
+    
+            <div class="bottom-section">
+                <div class="card">
+                    <h3>💸Kasus Deepfake Penipuan Suara AI untuk Mencuri Uang</h3>
+                    <p>Pada tahun 2019, seorang CEO perusahaan energi di Inggris menjadi korban penipuan berbasis deepfake audio AI. Penjahat menggunakan teknologi ini untuk meniru suara pemimpin perusahaan induk di Jerman dan, melalui telepon, memberikan instruksi kepada CEO tersebut agar mentransfer dana sebesar €220.000 (sekitar Rp3,6 miliar) ke pemasok di Hungaria. Karena suara yang dihasilkan terdengar sangat mirip dengan atasan aslinya, CEO tersebut tidak curiga dan langsung melakukan transfer ke rekening yang ternyata palsu.
+                    </p>
+                    <p>Laporan berita kemudian merinci bahwa CEO tersebut mengenali "sedikit aksen Jerman dan melodi" dari suara atasannya, sehingga ia mengikuti perintah untuk mentransfer dana dalam waktu satu jam. Namun, ketika penelepon mencoba beberapa kali untuk mendapatkan putaran uang kedua, eksekutif Inggris tersebut mulai curiga dan menolak untuk melakukan transfer lagi. Dana sebesar €220.000 tersebut kemudian dipindahkan ke Meksiko dan disalurkan ke beberapa rekening lain. Perusahaan energi tersebut yang identitasnya tidak disebutkan, melaporkan insiden ini kepada perusahaan asuransi mereka, Euler Hermes Group SA. </p>
+                    <p>Seorang pejabat di Euler Hermes menyatakan bahwa pencuri menggunakan kecerdasan buatan untuk menciptakan suara palsu dari eksekutif Jerman tersebut, meskipun laporan tersebut kemudian mempertanyakan kurangnya bukti pendukung terkait metode yang digunakan dalam penipuan ini. Akan tetapi, yang pasti, teknologi untuk jenis kejahatan ini memang ada, dan hanya masalah kapan serangan berikutnya akan terjadi dan siapa yang akan menjadi targetnya.</p>
+                </div>
+                <div class="card">
+                    <h3>💲 Analisis dan Kesimpulan</h3>
+                    <p>Kasus penipuan berbasis deepfake audio AI ini menegaskan pentingnya meningkatkan kewaspadaan terhadap informasi palsu yang semakin sulit dibedakan dari yang asli. Dengan kemajuan teknologi AI, manipulasi suara, gambar, dan video kini dapat dilakukan dengan sangat mirip dengan aslinya, sehingga orang lebih rentan tertipu. Oleh karena itu, penting untuk tidak langsung mempercayai setiap informasi atau instruksi yang diterima, terutama jika menyangkut transaksi keuangan atau keputusan penting. Selalu melakukan verifikasi tambahan, seperti mengkonfirmasi langsung melalui jalur komunikasi lain atau menggunakan sistem keamanan tambahan yang dapat membantu mencegah penipuan yang memanfaatkan deepfake.</p>
+                    <p>Selain itu, peningkatan literasi digital menjadi kunci dalam menghadapi ancaman informasi palsu di era AI. Masyarakat dan dunia bisnis harus lebih kritis dalam mengidentifikasi kemungkinan manipulasi, baik dalam bentuk video, suara, maupun teks. Mengandalkan satu sumber informasi saja tidak cukup, penting untuk selalu memeriksa keabsahan dari sumber resmi atau terpercaya. Dengan kesadaran yang lebih tinggi dan penerapan langkah-langkah pencegahan, risiko menjadi korban penipuan atau penyebaran hoaks akibat teknologi deepfake dapat diminimalkan.</p>
+
+                </div>
+            </div>
+        </div>
+    </body>    
+            
+</body>
+</html>

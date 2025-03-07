@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penggunaan AI</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #faf86f;
+            text-align: center;
+        }
+        .dropdown {
+            display: inline-block;
+            position: relative;
+            margin: 20px;
+        }
+        .dropbtn {
+            background-color: #6ec6ff;
+            color: white;
+            padding: 14px 20px;
+            font-size: 16px;
+            border: 2px solid #4fa3d1;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            border: 2px solid #4fa3d1;
+            z-index: 10;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #a0e1ff;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .paragraf.box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            width: 70%;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transform: scale(1);
+            transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .paragraf.box:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        .paragraf.box h2 {
+            margin-bottom: 10px;
+            color: rgb(19, 35, 63);
+            font-family: 'Verdana', sans-serif;
+            text-align: center;
+        }
+
+        .paragraf.box p {
+            color: rgb(50, 50, 50);
+            font-family: 'Verdana', sans-serif;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        /* Animasi Scroll */
+        .scroll-animation {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .scroll-animation.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.custom-button {
+    background-color: #6ec6ff; /* Warna biru muda */
+    color: white; /* Warna teks putih */
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid #4fa3d1; /* Outline biru */
+    border-radius: 15px; /* Sudut membulat */
+    padding: 10px 25px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #4fa3d1; /* Warna biru lebih gelap saat hover */
+}
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="header.png" alt="">
+    </div>
+
+    <div class="menu-container"> 
+        <div class="navigation">
+            <a href="index.html" class="custom-button">Home</a>
+        </div>    
+    
+        <div class="dropdown">
+            <button class="dropbtn">Pendahuluan</button>
+            <div class="dropdown-content">
+                <a href="pendahuluan.html">Latar Belakang</a>
+                <a href="rumusan.html">Rumusan Masalah</a>
+                <a href="tujuan.html">Tujuan Penelitian</a>
+                <a href="manfaat penelitian.html">Manfaat Penelitian</a>
+            </div>
+        </div>
+    
+    
+        <div class="dropdown">
+            <button class="dropbtn">Profile</button>
+            <div class="dropdown-content">
+                <a href="profil.html">Celine</a>
+                <a href="profil.html">Griselle</a>
+                <a href="profil.html">Kimora</a>
+                <a href="profil.html">Louisa</a>
+                <a href="profil.html">Ursula</a>
+                <a href="profil.html">Valika</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Isi</button>
+            <div class="dropdown-content">
+                <a href="perkembangan.html">Penjelasan & Perkembangan AI</a>
+                <a href="dampak positif.html">Dampak Positif AI</a>
+                <a href="dampak negatif.html">Dampak Negatif AI</a>
+                <a href="contoh.html">Contoh AI</a>
+            </div>
+        </div>
+ 
+        <div class="dropdown">
+            <button class="dropbtn">Studi Kasus</button>
+            <div class="dropdown-content">
+                <a href="studi kasus pos.html">Studi Kasus Positif </a>
+                <a href="studi kasus neg.html">Studi kasus Negatif </a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Penutup</button>
+            <div class="dropdown-content">
+                <a href="kesimpulan.html">Kesimpulan</a>
+                <a href="saran.html">Saran</a>
+                <a href="penutup.html">Kata Penutup</a>
+                <a href="pustaka.html">Daftar Pustaka</a>
+            </div>
+        </div>
+    </div>      
+    
+      
+    <!-- Latar Belakang dengan Scroll Animation -->
+    <div class="content">
+        <div class="column side"></div>
+        <div class="column center">
+            <div class="paragraf box scroll-animation">
+                <h2>Latar Belakang</h2>
+                <p>Kita hidup di era modern, dimana teknologi berkembang semakin pesat menciptakan berbagai inovasi yang mengubah cara hidup manusia. Kemajuan ini dapat dilihat dari berbagai aspek kehidupan termasuk bidang komunikasi, transportasi, industri, kesehatan, pendidikan, dan lain-lain. Banyak inovasi baru yang dapat membantu manusia menyelesaikan pekerjaannya dengan lebih cepat dan efisien. Salah satunya adalah kecerdasan buatan atau yang sering dikenal sebagai AI. </p>
+            </div>
+
+            <div class="paragraf box scroll-animation">
+                <h2>Manfaat dan dampak AI</h2>
+                <p>AI membawa banyak manfaat bagi kehidupan manusia dengan meningkatkan efisiensi, produktivitas, dan inovasi dalam berbagai aspek kehidupan. Dalam dunia kesehatan, AI dapat membantu dokter mendiagnosis secara lebih cepat dan akurat. Di sektor industri, AI mampu mempercepat proses produksi dan mengurangi kesalahan manusia, sehingga kualitas dan kuantitas produk dapat meningkat. Selain itu, AI juga mempermudah manusia untuk mengakses informasi seperti membantu menjawab pertanyaan atau menerjemahkan bahasa secara real-time. Namun, penggunaan yang menguntungkan ini hanya berlaku jika AI dimanfaatkan dan dikembangkan dengan bijak.
+                    Meskipun perkembangan teknologi dapat membantu manusia menyelesaikan pekerjaannya dengan lebih cepat dan efisien, ketergantungan manusia terhadap AI semakin meningkat. AI disalahgunakan untuk menyelesaikan tugas-tugas penting seperti menganalisis data, mengendalikan sistem otomatis, bahkan menciptakan karya seni dan musik. Tidak hanya AI, robot yang fisik dan cara berpikirnya menyerupai manusia pun telah dikembangkan dan diperkenalkan kepada masyarakat luas. Hal ini tentu menimbulkan rasa khawatir dan waspada bagi manusia, takut bahwa peran manusia dalam dunia kerja dan kehidupan sosial bisa tergantikan oleh mesin. 
+                    Dampak negatif dari AI dan robot menyerupai manusia tidak bisa diabaikan. Pada saat ini, salah satu permasalahan terbesar di dunia adalah tingkat pengangguran yang terus meningkat, banyaknya pekerjaan yang digantikan oleh mesin dan AI merupakan salah satu pemicu meningkatnya angka pengangguran. Pekerjaan yang dulu membutuhkan tenaga manusia sekarang bisa dilakukan oleh AI dengan lebih cepat dan efisien. Jika kebiasaan bergantung kepada AI ini berlanjut, hal-hal buruk dapat terjadi  dan ketimpangan sosial pun semakin melebar. 
+                    Selain itu, penggunaan AI yang tidak bijaksana juga dapat membawa risiko besar bagi masyarakat. AI yang dikembangkan tanpa pengawasan yang ketat bisa disalahgunakan untuk menyebarkan informasi palsu, manipulasi opini publik, dan lain-lain. AI bisa menjadi ancaman serius bagi keberlangsungan manusia di masa depan. </p>
+            </div>
+
+            <div class="paragraf box scroll-animation">
+                <h2>Pentingnya Pengendalian AI</h2>
+                <p>Oleh karena itu, penting bagi kita untuk mengendalikan perkembangan AI agar tetap memberikan manfaat bagi manusia tanpa mengorbankan pekerjaan dan kesejahteraan sosial. Etika dalam pengembangan dan penggunaan AI harus lebih ditegakkan dan ditegaskan agar teknologi ini dapat digunakan dengan bijak dan tidak menggantikan peran manusia secara berlebihan. Dengan menanggapi AI secara bijak, kita dapat memastikan bahwa AI akan tetap menjadi alat bantu manusia dan bukan ancaman bagi eksistensi kita. 
+                    Dengan laporan penelitian ini, kami akan melakukan penelitian yang lebih mendalam mengenai dampak dari AI dalam berbagai aspek kehidupan. Penelitian ini akan mencakup penjelasan, perkembangan, manfaat, dampak, contoh, serta studi kasus mengenai AI. Kami berharap melalui penelitian ini, para pembaca dan kami sendiri dapat memperoleh pemahaman yang komprehensif mengenai manfaat dan tantangan AI. Agar masing-masing individu dapat menanggapi AI secara bijak dan benar. </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript untuk Animasi Scroll -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll(".scroll-animation");
+
+            function checkScroll() {
+                elements.forEach((el) => {
+                    const position = el.getBoundingClientRect().top;
+                    const screenHeight = window.innerHeight;
+
+                    if (position < screenHeight - 50) {
+                        el.classList.add("show");
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", checkScroll);
+            checkScroll(); // Panggil sekali saat halaman dimuat
+        });
+    </script>
+
+</body>
+</html>
